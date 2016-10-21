@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en-US" xmlns="http://www.w3.org/1999/html">
+
+<body>
+<head>
+  <script type="application/javascript " src=""></script>
+  <title>Personal Website</title>
+  <meta charset="UTF-8">
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='stylesheets/style.css') }}">
+  <script src="{{url_for('static', filename='javascript/script.js')}}"></script>
+</head>
+
+<h1 class = "homepage"> <strong>Alexandra Lefevre</strong> </h1>
+
+<ul class="tab">
+  <li><a href="#" class="tablinks" onclick="openPage(event, 'Home')">Home</a></li>
+  <li><a href="#" class="tablinks" onclick="openPage(event, 'About')">About</a></li>
+  <li><a href="#" class="tablinks" onclick="openPage(event, 'Resume')">Resume</a></li>
+  <li><a href="#" class="tablinks" onclick="openPage(event, 'Projects')">Projects</a></li>
+  <li><a href="#" class="tablinks" onclick="openPage(event, 'Coursework')">Coursework</a></li>
+  <li><a href="#" class="tablinks" onclick="openPage(event, 'Contact')">Contact</a></li>
+</ul>
+
+
+<!-- ABOUT TAB-->
+<div id="About" class="tabcontent">
+  <p class="about"> <strong>Alexandra Lefevre is a senior at the University of Michigan studying Computer Science with a focus in data analytics. Her past experiences include projects concerning financial modelling, natural language processing, and bioinformatics. Dreaming of becoming a doctor, she soon found other interests in economics and eventually computer science, giving a wide knowledge and skill set not only in programming, but in problem solving specific to finance and bioinformatic sectors. </strong><br> </p>
+</div>
+
+<!-- RESUME TAB-->
+<div id="Resume" class="tabcontent">
+  <h2 class = "resume"><strong>Work Experience</strong></h2>
+   <table class= "resume">
+    <tr>
+      <td class="name">
+        <h4 class="resume">Data Analytics Intern</h4>
+        <p class="resume"> TD Ameritrade <br>Jun 2016 - Present</p>
+      </td>
+      <td class="info">
+        <ul class="resume">
+          <li>Built a financial model to analyze effect of macroeconomic shocks on sector stock returns</li>
+          <li>Used natural language processing methods to build a classification system for client communications</li>
+          <li>Used R, Python, Java for these projects, along with GARCH modeling, Maximum Likelihood Estimation and other statistical methods</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+  <table class= "resume">
+    <tr>
+      <td class="name">
+        <h4 class="resume">Statistics Intern</h4>
+        <p class="resume">Federal Reserve Bank of Chicago<br>Jun 2015 - Aug 2015</p>
+      </td>
+      <td class="info">
+        <ul class="resume">
+          <li>Evaluated auditing reports of entities in the 7th District to assess compliance of federal regulations and to validate internal control structure</li>
+          <li>Led and performed thorough analysis to ensure data quality for the Federal Reserve's deposit-related reporting series</li>
+          <li>Managed communication with depository institutions to further investigate data fluctuations and integrity, as well as provide reasoning for the data to the Federal Reserve Board</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+  <table class= "resume">
+    <tr>
+      <td class="name">
+        <h4 class="resume">Cancer Research Lab Assistant </h4>
+        <p class="resume">Northwestern University, University of Michigan<br>June 2010 - January 2014</p>
+      </td>
+      <td class="info">
+        <ul class="resume">
+          <li>Helped graduate students with delicate experiments, requiring attention to detail</li>
+          <li>Collaborated on various experiments and worked with multidisciplinary groups</li>
+          <li>Worked independently on portions of the experiments</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+  <hr>
+
+  <h2 class = "resume"><strong>Extracurriculars</strong></h2>
+  <table class= "resume">
+    <tr>
+      <td class="name">
+        <h4 class="resume">Michigan Hackers</h4>
+      </td>
+      <td class="info">
+        <ul class="resume">
+          <li>Present lectures and tutorials on coding topics (ex. Python, web development, compilers,
+              etc.) to students interested in computer science</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+  <hr>
+
+  <h2 class = "resume"><strong>Skills</strong></h2>
+  <table class= "resume">
+    <tr>
+      <td class="name">
+        <h4 class="resume">Languages</h4>
+      </td>
+      <td class="info">
+        <ul class="resume">
+          <li>C++, Python, Java, HTML/CSS/Javascript</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">
+        <h4 class="resume">Data Analytics</h4>
+      </td>
+      <td class="info">
+        <ul class="resume">
+          <li>R, NLP, Financial Modelling</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">
+        <h4 class="resume">Misc.</h4>
+      </td>
+      <td class="info">
+        <ul class="resume">
+          <li>Fluency in Russian and French</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+  <hr>
+  <a href="Resume.pdf" target="_blank"><h2 class="resume">Download Resume</h2></a>
+</div>
+
+<!--PROJECTS TAB-->
+<div id="Projects" class="tabcontent">
+  <table class="resume">
+    <tr>
+      <td class="name">
+        <h4 class="resume">Europa Mission Research Project</h4>
+        <p class="resume"> University of Michigan — NASA <br> Jan 2016 - Present</p>
+      </td>
+      <td class="info">
+        <ul class="resume">
+            <li>Writing Python script in order to convert electric currents into numeric values
+            for data analysis</li>
+            <li>Product will be used by organizations such as NASA</li>
+            <li>Working with a multidisciplinary team</li>
+            <li>Skills: Python, C++, GUI design, statistics</li>
+        </ul>
+    </tr>
+  </table>
+  <table class="resume">
+    <tr>
+      <td class="name">
+        <h4 class="resume">Piano Composition Web Application</h4>
+        <p class="resume"> University of Michigan <br> Sep 2016 - Present</p>
+      </td>
+      <td class="info">
+        <ul class="resume">
+            <li>Creating a web application for users with limited motor ability in one or both hands</li>
+            <li>User will be able to compose complex pieces of music by recording a composition in pieces</li>
+            <li>Composition is created by overlaying the rcorded pieces of music</li>
+            <li>Skills: Python, Python Flask, Javascript, CSS, HTML, GUI design</li>
+        </ul>
+    </tr>
+  </table>
+</div>
+
+<!--COURSES TAB-->
+<div id="Coursework" class="tabcontent">
+  <h2 class = "resume"><strong>University of Michigan, B.S. Computer Science</strong></h2>
+  <hr>
+  <h3 class = "resume"><strong>Computer Science Courses</strong></h3>
+    <table class= "resume">
+    <tr>
+      <td class="name">
+        <h4 class="resume">EECS 281: Data Structures and Algorithms</h4>
+      </td>
+      <td class="info">
+        <ul class="resume">
+          <li>fundamental data structures including lists, stacks, queues, priority queues, hash tables, binary trees, search trees, balanced trees and graphs </li>
+          <li>searching and sorting algorithms </li>
+          <li>recursive algorithms</li>
+          <li>graph algorithms</li>
+          <li>dynamic programming, greeding algorithms, divide and conquer strategy</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">
+        <h4 class="resume">EECS 376: Foundations of Computer Science</h4>
+      </td>
+      <td class="info">
+        <ul class="resume">
+          <li>finite automata </li>
+          <li>context-free languages</li>
+          <li>Turing Machines</li>
+          <li>Recursive languages, functions, computational complexity</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">
+        <h4 class="resume">EECS 370: Intro to Computer Organization</h4>
+      </td>
+      <td class="info">
+        <ul class="resume">
+          <li>ARM Assembly Language</li>
+          <li>Virtual Memory, RAM, LRU caches</li>
+          <li>Instruction Execution</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">
+        <h4 class="resume">EECS 388: Intro to Computer Security</h4>
+      </td>
+      <td class="info">
+        <ul class="resume">
+          <li>standard cryptographic functions and protocols</li>
+          <li>threats and defenses for real-world systems</li>
+          <li>incident response</li>
+          <li>computer forensics</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">
+        <h4 class="resume">EECS 481: Software Engineering</h4>
+      </td>
+      <td class="info">
+        <ul class="resume">
+          <li>creation of software systems</li>
+          <li>dealing with structuring principles, design methodologies, and informal analysis</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">
+        <h4 class="resume">EECS 498: Natural Language Processing</h4>
+      </td>
+      <td class="info">
+        <ul class="resume">
+          <li>human language technology (machine translation, information extraction)</li>
+          <li>computational models of language users</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+  <h3 class = "resume"><strong>Statistics and Mathematics Courses</strong></h3>
+  <table class= "resume">
+    <tr>
+      <td class="name">
+        <h4 class="resume">STATS 401: Regression Models</h4>
+      </td>
+      <td class="info">
+        <ul class="resume">
+          <li>Simple, multiple, and logistic regression models</li>
+          <li>Model evaluation (hypothesis testing, ANOVA, F-test, t-tests)</li>
+          <li>Model selection and transformation</li>
+        </ul>
+      </td>
+    </tr><tr>
+      <td class="name">
+        <h4 class="resume">MATH 214: Linear Algebra</h4>
+      </td>
+      <td class="info">
+        <ul class="resume">
+          <li>Linear Algebra applications in statistics and technologies</li>
+          <li>Eigenvalues, singular value decompositions</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+  <h3 class = "resume"><strong>Random Knowledge Accumulation</strong></h3>
+    <table class= "resume">
+    <tr>
+      <td class="name">
+        <h4 class="resume">LING 210: Linguistic Analysis</h4>
+      </td>
+      <td class="info">
+        <ul class="resume">
+          <li>Linguistic analysis on multiple levels: phonology, morphology, syntax, semantics</li>
+          <li>Sociolinguistics and psycholinguistics</li>
+        </ul>
+      </td>
+    </tr><tr>
+      <td class="name">
+        <h4 class="resume">COGSCI 200: Cognitive Science</h4>
+      </td>
+      <td class="info">
+        <ul class="resume">
+          <li>Algorithmic formulations for human processes such as decision-making, emotions, infant cognition
+              and language</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<!--CONTACT TAB-->
+<div id="Contact" class="tabcontent">
+  <h2 class = "resume"><strong>708-275-2094</strong></h2>
+  <h2 class = "resume"><strong>alefevre@umich.edu</strong></h2>
+  <a href="Resume.pdf" target="_blank"><h2 class="resume">Download Resume</h2></a>
+</div>
+
+<img id = "home_img" class="portrait" src="https://bytebucket.org/alefevre/alefevre.bitbucket.org/raw/0200353ab68fe5012b247646d6052e75c222a0ba/portrait.jpg?token=7d22e13270d70daaf2a36d0a9c5538ad702eb013 " alt="Mountain View">
+
+
+</body>
+</html>
+
+

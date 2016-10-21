@@ -1,0 +1,164 @@
+body {
+    background-color: rgb(255,255,255);
+}
+
+h1.homepage {
+
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    object-position: center; 
+    letter-spacing: 3px;
+    color: #E9967A; 
+    font-size: 300%;
+}
+
+h3.homepage {
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    object-position: center; 
+    letter-spacing: 3px;
+    color: #E9967A; 
+    font-size: 100%;
+}
+
+h1.project {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    object-position: center; 
+    letter-spacing: 3px;
+    color: #b3b3cc;  
+    font-size: 300%;
+}
+
+h2.project {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    object-position: center; 
+    letter-spacing: 1px;
+    color: #52527a;   
+    font-size: 150%;
+}
+h3.project {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    object-position: center; 
+    color: #1f1f2e;   
+    font-size: 140%;
+}
+p.project {
+     font-family: Arial, sans-serif;
+    text-align: center;
+    object-position: center; 
+    color: #1f1f2e;   
+    font-size: 100%;
+}
+.portrait
+{
+  width: 100%;
+  z-index: 0;
+}
+
+/* Style the list */
+ul.tab {
+    list-style-type: none;
+    margin-left: 25%; 
+    padding: 0;
+    overflow: hidden;
+    background-color: #FFFFFF;
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left;}
+
+/* Style the links inside the list items */
+ul.tab li a { 
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    color: #E9967A; 
+    font-size: 100%;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {background-color: #ddd;}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {background-color: #ccc;}
+
+/* Style the tab content */
+.tabcontent {
+    width: 100%; 
+    display: none;
+    padding: 6px 12px;*
+    border: 1px solid #ccc;
+    border-top: none;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+.tabcontent p.about {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 6px 12px;*
+    line-height: 150%;
+    color: #271e62; 
+}
+.tabcontent h2.resume{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    object-position: center; 
+    letter-spacing: 1px;
+    color: #271e62;  
+}
+
+.tabcontent h3.resume{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    object-position: center; 
+    letter-spacing: 1px;
+    color: #271e62;  
+}
+
+.tabcontent h4.resume {
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    text-align: center; 
+    color: #7575a3;
+}
+.tabcontent p.resume {
+    font-family: Arial, sans-serif;
+    text-align: center; 
+    color: #a3a3c2; 
+}
+.tabcontent table.resume {
+    width: 100%;
+    font-family: Arial, sans-serif;
+    color: #271e62;
+}
+
+.tabcontent table.resume td.name {
+    width: 30%; 
+}
+.tabcontent table.resume td.info{
+    width: 70%; 
+}
+.tabcontent table.resume ul.resume li{
+    font-family: Arial, sans-serif;
+    line-height: 200%;
+    color: #a3a3c2;
+}
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}

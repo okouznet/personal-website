@@ -1,17 +1,9 @@
 
-function openPage(evt, pageName, homeImg) {
-    if(homeImg == 0) {
-        var elem = document.getElementById('home_img');
-        elem.parentNode.removeChild(elem);
-        elem.style.display = "hide"
-    }
-    else {
-        var elem = document.getElementById('home_img');
-        //elem.parentNode.appendChild(elem);
-        elem.style.display = "block"
-    }
-    // Declare all variables
-
+function openPage(evt, pageName) {
+    var elem = document.getElementById('home_img');
+    //elem.parentNode.removeChild(elem);
+    elem.style.display = "none"
+    
     var i, tabcontent, tablinks;
 
     // Get all elements with class="tabcontent" and hide them

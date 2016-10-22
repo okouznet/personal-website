@@ -10,7 +10,6 @@ python-dateutil==1.5
 pytz==2013.7
 regex==2016.8.27
 scikit-learn==0.18
-scipy==0.13.0b1
 six==1.4.1
 sklearn==0.0
 vboxapi==1.0

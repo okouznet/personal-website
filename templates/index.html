@@ -111,7 +111,7 @@
       </td>
       <td class="info">
         <ul class="resume">
-          <li>R, NLP, Financial Modelling</li>
+          <li>R, Natural Language Processing, Financial Modelling</li>
         </ul>
       </td>
     </tr>
@@ -127,7 +127,7 @@
     </tr>
   </table>
   <hr>
-  <a href="Resume.pdf" target="_blank"><h2 class="resume">Download Resume</h2></a>
+  <a href="{{url_for('static', filename='Resume.pdf')}}" target="_blank"><h2 class="resume">Download Resume</h2></a>
 </div>
 
 <!--PROJECTS TAB-->
@@ -158,7 +158,7 @@
         <ul class="resume">
             <li>Creating a web application for users with limited motor ability in one or both hands</li>
             <li>User will be able to compose complex pieces of music by recording a composition in pieces</li>
-            <li>Composition is created by overlaying the rcorded pieces of music</li>
+            <li>Composition is created by overlaying the recorded pieces of music</li>
             <li>Skills: Python, Python Flask, Javascript, CSS, HTML, GUI design</li>
         </ul>
     </tr>
@@ -299,9 +299,11 @@
 
 <!--CONTACT TAB-->
 <div id="Contact" class="tabcontent">
-  <h2 class = "resume"><strong>708-275-2094</strong></h2>
-  <h2 class = "resume"><strong>alefevre@umich.edu</strong></h2>
-  <a href="Resume.pdf" target="_blank"><h2 class="resume">Download Resume</h2></a>
+    <h2 class = "resume"><strong>708-275-2094</strong></h2>
+    <h2 class = "resume"><strong>alefevre@umich.edu</strong></h2>
+    <a href="https://stark-fjord-89111.herokuapp.com" target="_blank"><h2 class="resume">Website</h2></a>
+    <a href="https://github.com/okouznet" target="_blank"><h2 class="resume">Github Repository</h2></a>
+    <a href="{{url_for('static', filename='Resume.pdf')}}" target="_blank"><h2 class="resume">Download Resume</h2></a>
 </div>
 
 <img id = "home_img" class="portrait"

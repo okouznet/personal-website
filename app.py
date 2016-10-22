@@ -14,9 +14,9 @@ def home():
 if __name__ == '__main__':
     app.run()
 
-@app.route('/finance_project')
+@app.route('/finance')
 def finance():
-    return True
+    return render_template('garch.html')
 
 @app.route('/piano_project')
 def piano():

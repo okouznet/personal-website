@@ -13,3 +13,11 @@ def home():
     return render_template('index.html')
 if __name__ == '__main__':
     app.run()
+
+@app.route('/finance_project')
+def finance():
+    return True
+
+@app.route('/piano_project')
+def piano():
+    return True

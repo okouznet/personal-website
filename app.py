@@ -11,13 +11,14 @@ def homepage():
 @app.route('/home')
 def home():
     return render_template('index.html')
-if __name__ == '__main__':
-    app.run()
 
 @app.route('/finance')
 def finance():
     return render_template('garch.html')
 
-@app.route('/piano_project')
-def piano():
-    return True
+# @app.route('/piano_project')
+# def piano():
+#     return True
+
+if __name__ == '__main__':
+    app.run()

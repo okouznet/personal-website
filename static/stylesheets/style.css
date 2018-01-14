@@ -24,12 +24,13 @@ div.transparent {
   border: 1px solid black;
   opacity: 0.6;
   filter: alpha(opacity=60); /* For IE8 and earlier */
+  overflow: scroll;
 }
 
 div.transparent p {
   margin: 5%;
   font-weight: bold;
-  color: #000000;
+  color: black;
   font-family: Arial, sans-serif;
 }
 
@@ -64,3 +65,59 @@ ul.tab li a:hover {background-color: #ddd;}
 
 /* Create an active/current tablink class */
 ul.tab li a:focus, .active {background-color: #ccc;}
+
+/* Style the tab content */
+.tabcontent {
+    width: 100%;
+    display: none;
+    padding: 6px 12px;*
+    border: 1px solid #ccc;
+    border-top: none;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+.tabcontent h2.resume{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    object-position: center;
+    letter-spacing: 1px;
+    color: black;
+}
+
+.tabcontent h3.resume{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    object-position: center;
+    letter-spacing: 1px;
+    color: black;
+}
+
+.tabcontent h4.resume {
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+}
+.tabcontent p.resume {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: black;
+}
+.tabcontent table.resume {
+    width: 100%;
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+.tabcontent table.resume td.name {
+    width: 30%;
+}
+.tabcontent table.resume td.info{
+    width: 70%;
+}
+.tabcontent table.resume ul.resume li{
+    font-family: Arial, sans-serif;
+    line-height: 200%;
+    color: black;
+}

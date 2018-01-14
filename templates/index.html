@@ -11,18 +11,107 @@
 
 <body>
 
-<h1 class = "homepage"> <strong>Alexandra Lefevre</strong> </h1>
+<h1 class = "homepage" onclick="GoToHomePage()"> <strong>Alexandra Lefevre</strong> </h1>
+
 
 <div class="transparent">
     <ul class="tab">
-        <li><a href="#" class="tablinks">Resume</a></li>
+        <li><a href="#" class="tablinks" onclick="openPage(event, 'Resume')">Resume</a></li>
         <li><a href="#" class="tablinks">Projects</a></li>
         <li><a href="#" class="tablinks">Coursework</a></li>
         <li><a href="#" class="tablinks">Contact</a></li>
     </ul>
 
     <p>This is some text that is placed in the transparent box.</p>
+
+    <!-- RESUME TAB-->
+<div id="Resume" class="tabcontent">
+  <h2 class = "resume"><strong>Work Experience</strong></h2>
+   <table class= "resume">
+    <tr>
+      <td class="name">
+        <h4 class="resume">Data Analytics Intern</h4>
+        <p class="resume"> TD Ameritrade <br>Jun 2016 - Present</p>
+      </td>
+      <td class="info">
+        <ul class="resume">
+          <li>Built a financial model to analyze effect of macroeconomic shocks on sector stock returns</li>
+          <li>Used natural language processing methods to build a classification system for client communications</li>
+          <li>Used R, Python, Java for these projects, along with GARCH modeling, Maximum Likelihood Estimation and other statistical methods</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+  <table class= "resume">
+    <tr>
+      <td class="name">
+        <h4 class="resume">Statistics Intern</h4>
+        <p class="resume">Federal Reserve Bank of Chicago<br>Jun 2015 - Aug 2015</p>
+      </td>
+      <td class="info">
+        <ul class="resume">
+          <li>Evaluated auditing reports of entities in the 7th District to assess compliance of federal regulations and to validate internal control structure</li>
+          <li>Led and performed thorough analysis to ensure data quality for the Federal Reserve's deposit-related reporting series</li>
+          <li>Managed communication with depository institutions to further investigate data fluctuations and integrity, as well as provide reasoning for the data to the Federal Reserve Board</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+  <table class= "resume">
+    <tr>
+      <td class="name">
+        <h4 class="resume">Cancer Research Lab Assistant </h4>
+        <p class="resume">Northwestern University, University of Michigan<br>June 2010 - January 2014</p>
+      </td>
+      <td class="info">
+        <ul class="resume">
+          <li>Helped graduate students with delicate experiments, requiring attention to detail</li>
+          <li>Collaborated on various experiments and worked with multidisciplinary groups</li>
+          <li>Worked independently on portions of the experiments</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+  <hr>
+
+  <h2 class = "resume"><strong>Skills</strong></h2>
+  <table class= "resume">
+    <tr>
+      <td class="name">
+        <h4 class="resume">Languages</h4>
+      </td>
+      <td class="info">
+        <ul class="resume">
+          <li>C++, Python, Java, Scala, R, Unix Scripting</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">
+        <h4 class="resume">Data Analytics</h4>
+      </td>
+      <td class="info">
+        <ul class="resume">
+          <li>Natural Language Processing, Financial Modelling, Machine Learning, Hadoop, Spark, Scikit Learn</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">
+        <h4 class="resume">Misc.</h4>
+      </td>
+      <td class="info">
+        <ul class="resume">
+          <li>Fluency in Russian and French</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+  <hr>
+  <a href="{{url_for('static', filename='Resume.pdf')}}" target="_blank"><h2 class="resume">Download Resume</h2></a>
 </div>
+</div>
+
 
 </body>
 </html>

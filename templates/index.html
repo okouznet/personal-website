@@ -17,9 +17,9 @@
 <div class="transparent">
     <ul class="tab">
         <li><a href="#" class="tablinks" onclick="openPage(event, 'Resume')">Resume</a></li>
-        <li><a href="#" class="tablinks">Projects</a></li>
+        <li><a href="#" class="tablinks" onclick="openPage(event, 'Projects')">Projects</a></li>
         <li><a href="#" class="tablinks">Coursework</a></li>
-        <li><a href="#" class="tablinks">Contact</a></li>
+        <li><a href="#" class="tablinks" onclick="openPage(event, 'Contact')">Contact</a></li>
     </ul>
 
     <p>This is some text that is placed in the transparent box.</p>
@@ -109,6 +109,62 @@
   </table>
   <hr>
   <a href="{{url_for('static', filename='Resume.pdf')}}" target="_blank"><h2 class="resume">Download Resume</h2></a>
+</div>
+
+    <!--PROJECTS TAB-->
+<div id="Projects" class="tabcontent">
+  <table class="resume">
+    <tr>
+      <td class="name">
+        <h4 class="resume">Europa Mission Research Project</h4>
+        <p class="resume"> University of Michigan — NASA <br> Jan 2016 - Present</p>
+      </td>
+      <td class="info">
+        <ul class="resume">
+            <li>Writing Python script in order to convert electric currents into numeric values
+            for data analysis</li>
+            <li>Product will be used by organizations such as NASA</li>
+            <li>Working with a multidisciplinary team</li>
+            <li>Skills: Python, C++, GUI design, statistics</li>
+        </ul>
+    </tr>
+    <tr>
+      <td class="name">
+        <h4 class="resume">Piano Composition Web Application</h4>
+        <p class="resume"> University of Michigan <br> Sep 2016 - Present</p>
+      </td>
+      <td class="info">
+        <ul class="resume">
+            <li>Creating a web application for users with limited motor ability in one or both hands</li>
+            <li>User will be able to compose complex pieces of music by recording a composition in pieces</li>
+            <li>Composition is created by overlaying the recorded pieces of music</li>
+            <li>Skills: Python, Python Flask, Javascript, CSS, HTML, GUI design</li>
+        </ul>
+    </tr>
+    <tr>
+      <td class="name">
+        <a href="{{url_for('garch')}}" target="_blank">
+            <h4 class="resume">GARCH Analysis of Stock Returns</h4>
+        </a>
+        <p class="resume"> Personal Project/ TD Ameritrade <br> May 2016 - Present</p>
+      </td>
+      <td class="info">
+        <ul class="resume">
+            <li>Analyze impact of macroeconomic shocks on stock returns</li>
+            <li>Used historical data from Federal Reserve and stock data from Yahoo! Finance</li>
+            <li>Run a series of statistical tests to choose correct model</li>
+            <li>Analyze effectiveness of model and make future stock return forecasts</li>
+        </ul>
+    </tr>
+  </table>
+</div>
+<!--CONTACT TAB-->
+<div id="Contact" class="tabcontent">
+    <h2 class = "resume"><strong>708-275-2094</strong></h2>
+    <h2 class = "resume"><strong>alefevre@umich.edu</strong></h2>
+    <a href="https://stark-fjord-89111.herokuapp.com" target="_blank"><h2 class="resume">Website</h2></a>
+    <a href="https://github.com/okouznet" target="_blank"><h2 class="resume">Github Repository</h2></a>
+    <a href="{{url_for('static', filename='Resume.pdf')}}" target="_blank"><h2 class="resume">Download Resume</h2></a>
 </div>
 </div>
 

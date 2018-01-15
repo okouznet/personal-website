@@ -20,9 +20,9 @@ h1.homepage {
 
 div.transparent {
   margin: 30px;
-  background-color: #ffffff;
+  background-color: #F0FFFF;
   border: 1px solid black;
-  opacity: 0.6;
+  opacity: 0.7;
   filter: alpha(opacity=60); /* For IE8 and earlier */
   overflow: scroll;
 }
@@ -40,7 +40,7 @@ ul.tab {
     margin-left: 30%;
     padding: 0;
     overflow: hidden;
-    background-color: #FFFFFF;
+    background-color: #F0FFFF;
 }
 
 /* Float the list items side by side */
@@ -107,8 +107,8 @@ ul.tab li a:focus, .active {background-color: #ccc;}
 .tabcontent table.resume {
     width: 100%;
     font-family: Arial, sans-serif;
-    color: black;
     font-weight: bold;
+    color: black;
 }
 
 .tabcontent table.resume td.name {

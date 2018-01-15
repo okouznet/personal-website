@@ -14,13 +14,13 @@ h1.homepage {
     text-align: center;
     object-position: center;
     letter-spacing: 3px;
-    color: 	#F0FFFF;
+    color: 	#FFFFFF;
     font-size: 300%;
 }
 
 div.transparent {
   margin: 30px;
-  background-color: #F0FFFF;
+  background-color: #FFFFFF;
   border: 1px solid black;
   opacity: 0.7;
   filter: alpha(opacity=60); /* For IE8 and earlier */
@@ -40,7 +40,7 @@ ul.tab {
     margin-left: 30%;
     padding: 0;
     overflow: hidden;
-    background-color: #F0FFFF;
+    background-color: #FFFFFF;
 }
 
 /* Float the list items side by side */

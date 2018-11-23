@@ -1,3 +1,7 @@
 .idea
 .idea/
 static/notebooks
+.DS_Store
+static/.DS_Store
+static/notebooks/.ipynb_checkpoints
+*.pyc
